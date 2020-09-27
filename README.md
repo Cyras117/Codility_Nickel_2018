@@ -1,0 +1,1 @@
+# Codility_Nickel_2018
