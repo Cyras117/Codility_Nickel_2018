@@ -26,11 +26,10 @@ def solution(P):
     """
     Returns the total nodes with value "TRUE" in a given OR-Pascal-triangle
     """
-    co = P
     total = 0
-    if co.__len__() <= 1:
+    if P.__len__() <= 1:
         return 
-    for x in range(co.__len__()):
-        total += total_t(co)
-        co = g_fam(co)
+    for x in range(P.__len__()):
+        total += total_t(P)
+        P = g_fam(P)
     return total
